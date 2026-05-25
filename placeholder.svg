@@ -1,0 +1,29 @@
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".site-nav");
+
+if (navToggle && nav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+const mailForm = document.querySelector("[data-mail-form]");
+if (mailForm) {
+  mailForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const data = new FormData(mailForm);
+    const name = data.get("name") || "";
+    const email = data.get("email") || "";
+    const service = data.get("service") || "";
+    const message = data.get("message") || "";
+
+    const subject = encodeURIComponent(`Consultation request from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nInterest: ${service}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:YOUR-EMAIL@example.com?subject=${subject}&body=${body}`;
+  });
+}

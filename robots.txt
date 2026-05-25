@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources & Blog | Fedor Stoietskyi</title>
+  <meta name="description" content="Free educational resources for life transitions, immigration stress, work meaning, and personal growth.">
+  <meta property="og:title" content="Resources & Blog | Fedor Stoietskyi">
+  <meta property="og:description" content="Free educational resources for life transitions, immigration stress, work meaning, and personal growth.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#416b58">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Fedor Stoietskyi home">
+        <strong>Fedor Stoietskyi</strong>
+        <span>Therapy-informed coaching & resources</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        
+    <a href="index.html" >Home</a>
+    <a href="services.html" >Services</a>
+    <a href="resources.html" aria-current='page'>Resources</a>
+    <a href="about.html" >About</a>
+    <a class="nav-cta" href="contact.html" >Start with a free intro call</a>
+    
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+<section class="page-hero">
+  <div class="container">
+    <p class="kicker">Resources & blog</p>
+    <h1>Free tools for the questions you keep carrying.</h1>
+    <p class="lead">
+      Short, practical articles for life transitions, immigration stress, work meaning, burnout, and identity.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container article-list">
+    <article class="card article-card">
+      <div>
+        <span class="tag">Life transition</span>
+        <h2>What to do when you know something has to change, but not what.</h2>
+        <p>Starter outline for a blog post about sorting symptoms, values, and first moves.</p>
+      </div>
+      <a class="button secondary" href="blog-life-transition.html">Read draft</a>
+    </article>
+
+    <article class="card article-card">
+      <div>
+        <span class="tag">Immigration</span>
+        <h2>Why starting over can feel lonely even when life is “better.”</h2>
+        <p>Starter outline for a blog post about grief, pressure, language, and identity after moving.</p>
+      </div>
+      <a class="button secondary" href="blog-immigration.html">Read draft</a>
+    </article>
+
+    <article class="card article-card">
+      <div>
+        <span class="tag">Work meaning</span>
+        <h2>When your job is fine, but your life feels flat.</h2>
+        <p>Starter outline for a blog post about career meaning without impulsive life changes.</p>
+      </div>
+      <a class="button secondary" href="blog-work-meaning.html">Read draft</a>
+    </article>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="container">
+    <div class="band">
+      <div>
+        <h2>Want resources matched to your situation?</h2>
+        <p>Bring your questions to a free intro call and we can decide what support fits.</p>
+      </div>
+      <a class="button" href="contact.html">Start with a free intro call</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <strong>Fedor Stoietskyi</strong>
+          <span>Remote support based in Boston, Massachusetts</span>
+        </a>
+        <p style="margin-top: 14px;">Practical, culturally sensitive support for life transitions, identity questions, work stress, immigration adjustment, and meaning-making.</p>
+      </div>
+      <div>
+        <strong>Explore</strong>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="resources.html">Resources & blog</a></li>
+          <li><a href="about.html">Biography</a></li>
+          <li><a href="contact.html">Free intro call</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Important</strong>
+        <ul>
+          <li>Remote services</li>
+          <li>Boston, Massachusetts</li>
+          <li>Replace placeholder credentials before launch</li>
+          <li>For emergencies, call 988 or local emergency services.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
