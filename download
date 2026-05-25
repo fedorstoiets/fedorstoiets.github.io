@@ -1,9 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Warm abstract therapy session image">
-  <rect width="1200" height="800" fill="#f8f4ee"/>
-  <circle cx="320" cy="300" r="190" fill="#dfe9e2"/>
-  <circle cx="780" cy="420" r="260" fill="#ede3d5"/>
-  <rect x="240" y="520" width="720" height="80" rx="40" fill="#416b58" opacity=".20"/>
-  <path d="M374 382c36-78 134-78 170 0" fill="none" stroke="#2b493c" stroke-width="28" stroke-linecap="round"/>
-  <path d="M690 382c36-78 134-78 170 0" fill="none" stroke="#2b493c" stroke-width="28" stroke-linecap="round"/>
-  <text x="600" y="690" text-anchor="middle" font-family="Arial" font-size="42" fill="#637064">Replace with your image</text>
-</svg>
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".site-nav");
+
+if (navToggle && nav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window && revealItems.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("visible"));
+}
+
+const mailForm = document.querySelector("[data-mail-form]");
+if (mailForm) {
+  mailForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const data = new FormData(mailForm);
+    const name = data.get("name") || "";
+    const email = data.get("email") || "";
+    const service = data.get("service") || "";
+    const message = data.get("message") || "";
+
+    const subject = encodeURIComponent(`Consultation request from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nInterest: ${service}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:YOUR-EMAIL@example.com?subject=${subject}&body=${body}`;
+  });
+}
